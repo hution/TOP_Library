@@ -8,7 +8,28 @@
     <title>Library</title>
 </head>
 <body>
-    <button onclick="displayBooks()">Add Book</button>
-    <div class="bookList"></div>
+    <dialog id="dialog">
+        <button id="closeBtn" onclick="closeDialog()">Close</button>
+        <button onClick="addBookToLibrary()" id="submitBtn">Submit</button>
+        <form action="#" method="get">
+            <div>
+                <label for="title">Book Title</label>
+            </div>
+            <br>
+            <div>
+                <label for="author">Book Author</label>
+            </div>
+            <br>
+            <div>
+                <label for="pages">Page Count</label>
+            </div>
+            <br>
+            <div>
+                <label for="read">Already Read?</label>
+            </div>
+        </form>
+    </dialog>
+    <button onclick="addBookToLibrary()">Add Book</button>
+    <div id="bookList"></div>
 </body>
 </html>
