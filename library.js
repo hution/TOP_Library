@@ -6,7 +6,7 @@ const myLibrary = [
 
 const body = document.querySelector("body");
 const bookListContainer = document.querySelector("#bookList");
-const dialog = document.querySelector("#dialog");
+const modal = document.querySelector("#dialog1");
 const closeButton = document.querySelector("#closeBtn");
 
 function Book(title, author, pages, read){
@@ -21,7 +21,8 @@ function Book(title, author, pages, read){
 }
 
 function addBookToLibrary(){
-    dialog.showModal();
+    console.log(body);
+    modal.showModal();
     
 }
 
@@ -29,9 +30,10 @@ function displayBooks(){
     //bookListContainer.append()
 
     for (var book of myLibrary){
+      
+     
         
-        
-        
+
         console.log(`
         Title:${book.title}\n
         Author:${book.author}\n
@@ -41,8 +43,10 @@ function displayBooks(){
     }
 }
 
+
+
 function closeDialog(){
-    dialog.close();
+    modal.close();
 }
     
 // const book1 = new Book("The Hobbit","J.R.R Tolkien",293,"not yet read");

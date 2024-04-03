@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="library.js"></script>
+    <script src="library.js" defer></script>
     <title>Library</title>
 </head>
 <body>
-    <dialog id="dialog">
+    <dialog id="dialog1">
         <button id="closeBtn" onclick="closeDialog()">Close</button>
         <button onClick="addBookToLibrary()" id="submitBtn">Submit</button>
         <form action="#" method="get">
@@ -29,7 +29,7 @@
             </div>
         </form>
     </dialog>
-    <button onclick="addBookToLibrary()">Add Book</button>
+    <button onclick="addBookToLibrary()">New Book</button>
     <div id="bookList"></div>
 </body>
 </html>
